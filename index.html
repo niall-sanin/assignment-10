@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Manipulating Images with JavaScript</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<h1>Manipulating Images with JavaScript</h1>
+
+<p>By: Niall Sanin</p>
+
+<p>The following is the result of what I learned on manipulating images using JavaScript. A user can change the image of the animal below by shifting the position of the button along the slider.</p>
+
+<div class="container">
+  <div class="row">
+
+  <div class="col-xs-12">
+
+    <img src="images/turtle_clip_art.png" id="T1" alt="Turtle">
+    <input id="slide" type="range" min="32" max="128" step="32" value="0" onchange="updateSlider(this.value)">
+       <div id="sliderAmount"></div>​
+  </div>
+  </div>
+</div>
+
+<p>The information below concerns the attributions of the images used:</p>
+
+<p>The <a href="https://commons.wikimedia.org/wiki/File%3ATurtle_clip_art.svg">Turtle</a> image.</p>
+<p>By badaman (https://openclipart.org/detail/229886/turtle) [CC0], via Wikimedia Commons</p>
+
+<p>The <a href="https://commons.wikimedia.org/wiki/File%3ASowa-356553.png">Owl</a> image.</p>
+<p>By https://pixabay.com/pl/users/kropekk_pl-114936/ [CC0], via Wikimedia Commons</p>
+
+<p>The <a href="https://commons.wikimedia.org/wiki/File%3ALemmling_walrus.svg">Walrus</a> image.</p>
+<p>By StudioFibonacci@openclipart.org [CC0], via Wikimedia Commons</p>
+
+<p>The <a href="https://commons.wikimedia.org/wiki/File%3APig_cartoon_04.svg">Pig</a> image.</p>
+<p>By LadyofHats (Own work) [Public domain], via Wikimedia Commons</p>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slideForImg.js"></script>
+
+</body>
+</html>
